@@ -1,0 +1,174 @@
+{
+  "tests": [
+    {
+      "name": "Check whether Main.java has been edited.",
+      "setup": "",
+      "run": "sha256sum Assignment2/src/Main.java",
+      "input": "",
+      "output": "084968630d7f5099d2b5322c7a212c38400e8f898c38e24b60cf2ee43cdc8882",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Check If directory CoolMath exists in src directory",
+      "setup": "",
+      "run": "cd Assignment2/src/CoolMath",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Check if IntegerArithmetic.java has been moved to CoolMath directory",
+      "setup": "",
+      "run": "cat Assignment2/src/CoolMath/IntegerArithmetic.java",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Check if DoubleArithmetic.java has been moved to CoolMath directory",
+      "setup": "",
+      "run": "cat Assignment2/src/CoolMath/DoubleArithmetic.java",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "  Check if class variable num1 is declared as int and private in IntegerArithmetic.java",
+      "setup": "",
+      "run": "tr -d '[[:space:]]' < Assignment2/src/CoolMath/IntegerArithmetic.java | grep privateintnum1; echo $?",
+      "input": "",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "  Check if class variable num2 is declared as int and private in IntegerArithmetic.java",
+      "setup": "",
+      "run": "tr -d '[[:space:]]' < Assignment2/src/CoolMath/IntegerArithmetic.java | grep privateintnum2; echo $?",
+      "input": "",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "  Check if class variable num1 is declared as int and private in DoubleArithmetic.java",
+      "setup": "",
+      "run": "tr -d '[[:space:]]' < Assignment2/src/CoolMath/DoubleArithmetic.java | grep privatedoublenum1; echo $?",
+      "input": "",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "  Check if class variable num2 is declared as int and private in DoubleArithmetic.java",
+      "setup": "",
+      "run": "tr -d '[[:space:]]' < Assignment2/src/CoolMath/DoubleArithmetic.java | grep privatedoublenum2; echo $?",
+      "input": "",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Verify sumTwoValues method is declared int, private, and static in IntegerArithmetic",
+      "setup": "",
+      "run": "tr -d '[[:space:]]' < Assignment2/src/CoolMath/IntegerArithmetic.java | grep privatestaticintsumTwoValues; echo $?",
+      "input": "",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Verify sumTwoValues method is declared double, private, and static in DoubleArithmetic",
+      "setup": "",
+      "run": "tr -d '[[:space:]]' < Assignment2/src/CoolMath/DoubleArithmetic.java | grep privatestaticdoublesumTwoValues; echo $?",
+      "input": "",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Program Compiles and Runs",
+      "setup": "cd Assignment2/src; javac CoolMath/*.java; javac *.java; pwd;",
+      "run": "cd Assignment2/src; java Main",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "IntegerArithmetic Class Is Behaving As Expected with Seed 150",
+      "setup": "cd Assignment2/src; javac CoolMath/*.java; javac *.java; pwd;",
+      "run": "cd Assignment2/src; java Main",
+      "input": "",
+      "output": "****Starting IntegerArithmetic Test******\r\n\t\t\tThe sum of 101 and 8 is 109\r\n\t\t\tThe difference of 101 and 8 is 93\r\n\t\t\tThe product of 101 and 8 is 808\r\n\t\t\tThe division quotient of 101 and 8 is 12\r\n\t\tThe values of num1 and num2 will be increased by  98 and 138 respectively to 199 and 146\r\n****Starting IntegerArithmetic Test******\r\n\t\t\tThe sum of 199 and 146 is 345\r\n\t\t\tThe difference of 199 and 146 is 53\r\n\t\t\tThe product of 199 and 146 is 29054\r\n\t\t\tThe division quotient of 199 and 146 is 1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "DoubleArithmetic Class Is Behaving As Expected with Seed 150",
+      "setup": "cd Assignment2/src; javac CoolMath/*.java; javac *.java; pwd;",
+      "run": "cd Assignment2/src; java Main",
+      "input": "",
+      "output": "****Starting DoubleArithmetic Test******\r\n\t\t\tThe sum of 477.195 and 160.711 is 637.907\r\n\t\t\tThe difference of 477.195 and 160.711 is 316.484\r\n\t\t\tThe product of 477.195 and 160.711 is 76690.617\r\n\t\t\tThe division quotient of 477.195 and 160.711 is 2.969\r\n\t\tThe values of num1 and num2 will be increased by  18.473 and 101.966 respectively to 495.668 and 262.677\r\n****Starting DoubleArithmetic Test******\r\n\t\t\tThe sum of 495.668 and 262.677 is 758.346\r\n\t\t\tThe difference of 495.668 and 262.677 is 232.991\r\n\t\t\tThe product of 495.668 and 262.677 is 130200.892\r\n\t\t\tThe division quotient of 495.668 and 262.677 is 1.887",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test that SillyFunctions.addTheTwoValues is not reachable outside the class SillyFunctions",
+      "setup": "cd Assignment2/src; javac CoolMath/*.java; javac *.java; ",
+      "run": "cd Assignment2/src; java Main",
+      "input": "",
+      "output": "I can not reach method SillyFunctions.addTheTwoValues - (GOOD JOB)",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Test Behavior of SillyFunction Seed 302",
+      "setup": "cd Assignment2/src; javac CoolMath/*.java; javac *.java; ",
+      "run": "cd Assignment2/src; java Main 302;",
+      "input": "",
+      "output": "The product of 92 and 56 is 5152\r\n**99,26,18**\r\n**113,40,32**",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Check complete behavior of program using seed 676",
+      "setup": "cd Assignment2/src; javac CoolMath/*.java; javac *.java; ",
+      "run": "cd Assignment2/src; (java Main 676 > output.txt); sha256sum output.txt",
+      "input": "",
+      "output": "6f6a04c85709eca98b7b227f526f5ec0d3313f20116ccb69cae269c8bcccddd3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "  Check complete behavior of program using seed 11204",
+      "setup": "cd Assignment2/src; javac CoolMath/*.java; javac *.java; ",
+      "run": "cd Assignment2/src; (java Main 11204 > output.txt); sha256sum output.txt",
+      "input": "",
+      "output": "9663c561353b7acb42954c07009ef5bb86f0092af89195c1470898be8f95f645",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
