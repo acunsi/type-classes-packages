@@ -1,0 +1,26 @@
+The product of -42 and -21 is 882
+**-52,39,-67,-7**
+**-38,53,-53,7**
+****Starting IntegerArithmetic Test******
+			The sum of 975 and 44 is 1019
+			The difference of 975 and 44 is 931
+			The product of 975 and 44 is 42900
+			The division quotient of 975 and 44 is 22
+		The values of num1 and num2 will be increased by  173 and 178 respectively to 1148 and 222
+****Starting IntegerArithmetic Test******
+			The sum of 1148 and 222 is 1370
+			The difference of 1148 and 222 is 926
+			The product of 1148 and 222 is 254856
+			The division quotient of 1148 and 222 is 5
+****Starting DoubleArithmetic Test******
+			The sum of 250.997 and 27.007 is 278.004
+			The difference of 250.997 and 27.007 is 223.990
+			The product of 250.997 and 27.007 is 6778.706
+			The division quotient of 250.997 and 27.007 is 9.294
+		The values of num1 and num2 will be increased by  150.691 and 142.115 respectively to 401.688 and 169.122
+****Starting DoubleArithmetic Test******
+			The sum of 401.688 and 169.122 is 570.810
+			The difference of 401.688 and 169.122 is 232.566
+			The product of 401.688 and 169.122 is 67934.331
+			The division quotient of 401.688 and 169.122 is 2.375
+I can not reach method SillyFunctions.addTheTwoValues - (GOOD JOB)
