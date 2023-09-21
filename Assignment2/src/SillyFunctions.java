@@ -1,25 +1,26 @@
-//there is a missing import statement that is required to make this class work.
+import CoolMath.IntegerArithmetic;
+
 public class SillyFunctions {
 
-    public  void addValueToArrayElements (int inputArray, int value) { //there are errors on this line
-        for (int i=0; i<inputArray.arrayLength; i++) { //this line contains an error
+    public static void addValueToArrayElements (int[] inputArray, int value) {
+        for (int i = 0; i < inputArray.length; i++) {
             inputArray[i] = addTheTwoValues(value,inputArray[i]);
         }
     }
 
-    public  int addTheTwoValues(int num1, int num2) { //there is an error on this line
-        return 0; //there is an error on this line
+    private static int addTheTwoValues(int num1, int num2) {
+        return num1 + num2;
     }
 
 
-    public  void testCoolMathFunction(int num1, int num2) { //there is an error on this line
-        IntegerArithmetic IA =  IntegerArithmetic(num1,num2); //there is one error on this line
+    public static void testCoolMathFunction(int num1, int num2) {
+        IntegerArithmetic IA =  new IntegerArithmetic(num1,num2);
         int product = IA.multiplication();
-        String outputString=String.format("The product of %d and %d is %d",num1,num2,product);
+        String outputString = String.format("The product of %d and %d is %d",num1,num2,product);
         System.out.println(outputString);
     }
 
-    private  String  commaSeparatedArray(int inputArray) { //there are  errors on this line
+    public static  String  commaSeparatedArray(int[] inputArray) { //there are  errors on this line
         String result = "";
         StringBuilder tmp = new StringBuilder();
         if (inputArray.length > 0) {
